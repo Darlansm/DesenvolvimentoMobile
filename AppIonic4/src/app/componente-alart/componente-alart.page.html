@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-toolbar>
+    <!-- slot = posição do botão -->
+    <ion-buttons slot="start">
+      <!-- <ion-menu-button color = "danger"></ion-menu-button> -->
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Alert
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-button expand='full' (click)="abrirAlertSimples()">
+    Abrir Alert Simples
+  </ion-button>
+  <ion-button expand='full' (click)="abrirAlertComMultiplosBotoes()">
+    Abrir Alert Com Multiplos Botões
+  </ion-button>
+  <ion-button expand='full' (click)="abrirAlertConfirmacao()">
+    Confirmação
+  </ion-button>
+  <ion-button expand='full' (click)="abrirPrompt()">
+      Prompt
+    </ion-button>
+
+    <ion-button expand='full' (click)="abrirRadio()">
+        Radio
+      </ion-button> 
+      
+      <ion-button expand='full' (click)="abrirCheckBox()">
+          Check Box
+        </ion-button>  
+
+</ion-content>

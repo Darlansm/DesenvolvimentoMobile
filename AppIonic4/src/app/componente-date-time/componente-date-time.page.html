@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- slot = posição do botão -->
+    <ion-buttons slot="start">
+      <!-- <ion-menu-button color = "danger"></ion-menu-button> -->
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Componente Date Time
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Data Defaut</ion-label>
+    <ion-datetime></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Display Format</ion-label>
+    <ion-datetime display-format="D/MM/YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Format + Picker </ion-label>
+      <ion-datetime display-format="MM/YYYY" picker-format="MMMM YYYY"></ion-datetime>
+    </ion-item>
+
+</ion-content>

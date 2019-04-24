@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar>
+      <!-- slot = posição do botão -->
+      <ion-buttons slot="start">
+        <!-- <ion-menu-button color = "danger"></ion-menu-button> -->
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        Componente Radio
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-list>
+   <ion-list>
+     <ion-radio-group name="auto">
+       <ion-list-header>Frutas</ion-list-header>
+       <ion-item>
+         <ion-label>Abacate</ion-label>
+         <ion-radio slot="start"value="abacate"></ion-radio>
+       </ion-item>
+       <ion-item>
+         <ion-label>Banana</ion-label>
+         <ion-radio slot="start" value="banana"></ion-radio>
+       </ion-item>
+       <ion-item>
+         <ion-label>Laranja</ion-label>
+         <ion-radio slot="start" value="laranja"></ion-radio>
+       </ion-item>
+     </ion-radio-group>
+   </ion-list>
+  </ion-list>
+
+  <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label >Name</ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Defaut</ion-label>
+          <ion-radio slot="start" value="biff" ></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Checked</ion-label>
+          <ion-radio slot="start" value="griff" checked></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Disabled</ion-label>
+          <ion-radio slot="start" value="buford" disabled = "true"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  
+
+</ion-content>

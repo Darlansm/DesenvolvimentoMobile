@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-toolbar>
+    <!-- slot = posição do botão -->
+    <ion-buttons slot="start">
+      <!-- <ion-menu-button color = "danger"></ion-menu-button> -->
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Badges
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-badge color="primary">42</ion-badge>
+  <ion-badge color="secondary">42</ion-badge>
+  <ion-badge color="dark">42</ion-badge>
+  <ion-badge color="danger">65</ion-badge>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="start" name="man"></ion-icon>
+      Seguidores
+      <ion-badge slot="end" color="primary">300K</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="start" name="eye"></ion-icon>
+      <ion-label>Visualizações</ion-label>
+      <ion-badge slot="end" color="secondary">300K</ion-badge>
+    </ion-item>
+    <ion-item>
+        <ion-icon slot="start" name="send"></ion-icon>
+        <ion-label>Mensagens</ion-label>
+        <ion-badge slot="end" color="dark">300K</ion-badge>
+      </ion-item>
+  </ion-list>
+
+</ion-content>
